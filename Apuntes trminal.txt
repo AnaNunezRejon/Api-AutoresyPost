@@ -1,0 +1,529 @@
+Clink v1.4.6.8b1dec
+Copyright (c) 2012-2018 Martin Ridgers
+Portions Copyright (c) 2020-2022 Christopher Antos
+https://github.com/chrisant996/clink
+
+C:\Users\delic>cd "C:\\Users\\delic\\Desktop\\Api AutoresyPost" 
+
+C:\Users\delic\Desktop\Api AutoresyPost>npm init   
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (api-autoresypost)
+version: (1.0.0)
+description:
+entry point: (index.js)
+test command:
+git repository:
+keywords:
+author: Ana Nuñez
+license: (ISC)
+About to write to C:\Users\delic\Desktop\Api AutoresyPost\package.json:
+
+{
+  "name": "api-autoresypost",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ana Nuñez",
+  "license": "ISC"
+}
+
+
+Is this OK? (yes) y
+
+C:\Users\delic\Desktop\Api AutoresyPost>npm runcode .
+Unknown command: "runcode"
+
+To see a list of supported npm commands, run:
+  npm help
+
+C:\Users\delic\Desktop\Api AutoresyPost>code .
+
+C:\Users\delic\Desktop\Api AutoresyPost>npm install -g express-generator
+npm WARN deprecated mkdirp@0.5.1: Legacy versions of mkdirp are no longer supported. Please update to mkdirp 1.x. (Note that the API surface has changed to use Promises in 1.x.)
+
+added 10 packages in 2s
+
+C:\Users\delic\Desktop\Api AutoresyPost>express --view=pug –git autores_post
+
+   create : –git\
+   create : –git\public\
+   create : –git\public\javascripts\
+   create : –git\public\images\
+   create : –git\public\stylesheets\
+   create : –git\public\stylesheets\style.css
+   create : –git\routes\
+   create : –git\routes\index.js
+   create : –git\routes\users.js
+   create : –git\views\
+   create : –git\views\error.pug
+   create : –git\views\index.pug
+   create : –git\views\layout.pug
+   create : –git\app.js
+   create : –git\package.json
+   create : –git\bin\
+   create : –git\bin\www
+
+   change directory:
+     > cd –git
+
+   install dependencies:
+     > npm install
+
+   run the app:
+     > SET DEBUG=git:* & npm start
+
+
+C:\Users\delic\Desktop\Api AutoresyPost>express --view=pug ./
+destination is not empty, continue? [y/N] y
+
+   create : .\
+   create : public\
+   create : public\javascripts\
+   create : public\images\
+   create : public\stylesheets\
+   create : public\stylesheets\style.css
+   create : routes\
+   create : routes\index.js
+   create : routes\users.js
+   create : views\
+   create : views\error.pug
+   create : views\index.pug
+   create : views\layout.pug
+   create : app.js
+   create : package.json
+   create : bin\
+   create : bin\www
+
+   change directory:
+     > cd ./
+
+   install dependencies:
+     > npm install
+
+   run the app:
+     > SET DEBUG=api-autoresypost:* & npm start
+
+
+C:\Users\delic\Desktop\Api AutoresyPost>npm install
+npm WARN deprecated core-js@2.6.12: core-js@<3.23.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Some versions have web compatibility issues. Please, upgrade your dependencies to the actual version of core-js.
+
+added 131 packages, and audited 132 packages in 12s
+
+13 packages are looking for funding
+  run `npm fund` for details
+
+7 vulnerabilities (2 low, 5 high)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues, run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+C:\Users\delic\Desktop\Api AutoresyPost>SET DEBUG=api-autoresypost:* & npm start
+
+> api-autoresypost@0.0.0 start
+> node ./bin/www
+
+  api-autoresypost:server Listening on port 3000 +0ms
+GET / 200 275.906 ms - 170
+GET /stylesheets/style.css 200 3.366 ms - 111
+GET /favicon.ico 404 10.676 ms - 1212
+^C^C¿Desea terminar el trabajo por lotes (S/N)? S
+
+C:\Users\delic\Desktop\Api AutoresyPost>npm install
+
+added 11 packages, and audited 143 packages in 2s
+
+13 packages are looking for funding
+  run `npm fund` for details
+
+7 vulnerabilities (2 low, 5 high)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues, run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+C:\Users\delic\Desktop\Api AutoresyPost>SET DEBUG=api-autoresypost:* & npm start
+
+> api-autoresypost@0.0.0 start
+> node ./bin/www
+
+C:\Users\delic\Desktop\Api AutoresyPost\node_modules\express\lib\router\route.js:202
+        throw new Error(msg);
+        ^
+
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (C:\Users\delic\Desktop\Api AutoresyPost\node_modules\express\lib\router\route.js:202:15)
+    at proto.<computed> [as post] (C:\Users\delic\Desktop\Api AutoresyPost\node_modules\express\lib\router\index.js:510:19)
+    at Object.<anonymous> (C:\Users\delic\Desktop\Api AutoresyPost\routes\index.js:10:8)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (C:\Users\delic\Desktop\Api AutoresyPost\app.js:7:19)
+
+Node.js v20.10.0
+
+C:\Users\delic\Desktop\Api AutoresyPost>SET DEBUG=api-autoresypost:* & npm start
+
+> api-autoresypost@0.0.0 start
+> node ./bin/www
+
+C:\Users\delic\Desktop\Api AutoresyPost\node_modules\express\lib\router\route.js:202
+        throw new Error(msg);
+        ^
+
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (C:\Users\delic\Desktop\Api AutoresyPost\node_modules\express\lib\router\route.js:202:15)
+    at proto.<computed> [as post] (C:\Users\delic\Desktop\Api AutoresyPost\node_modules\express\lib\router\index.js:510:19)
+    at Object.<anonymous> (C:\Users\delic\Desktop\Api AutoresyPost\routes\index.js:10:8)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (C:\Users\delic\Desktop\Api AutoresyPost\app.js:7:19)
+
+Node.js v20.10.0
+
+C:\Users\delic\Desktop\Api AutoresyPost>SET DEBUG=api-autoresypost:* & npm start
+
+> api-autoresypost@0.0.0 start
+> node ./bin/www
+
+C:\Users\delic\Desktop\Api AutoresyPost\node_modules\express\lib\router\route.js:202
+        throw new Error(msg);
+        ^
+
+Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (C:\Users\delic\Desktop\Api AutoresyPost\node_modules\express\lib\router\route.js:202:15)
+    at proto.<computed> [as get] (C:\Users\delic\Desktop\Api AutoresyPost\node_modules\express\lib\router\index.js:510:19)
+    at Object.<anonymous> (C:\Users\delic\Desktop\Api AutoresyPost\routes\index.js:11:8)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (C:\Users\delic\Desktop\Api AutoresyPost\app.js:7:19)
+
+Node.js v20.10.0
+
+C:\Users\delic\Desktop\Api AutoresyPost>SET DEBUG=api-autoresypost:* & npm start
+
+> api-autoresypost@0.0.0 start
+> node ./bin/www
+
+node:internal/modules/cjs/loader:1147
+  throw err;
+  ^
+
+Error: Cannot find module './routes/users'
+Require stack:
+- C:\Users\delic\Desktop\Api AutoresyPost\app.js
+- C:\Users\delic\Desktop\Api AutoresyPost\bin\www
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (C:\Users\delic\Desktop\Api AutoresyPost\app.js:8:19)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\delic\\Desktop\\Api AutoresyPost\\app.js',
+    'C:\\Users\\delic\\Desktop\\Api AutoresyPost\\bin\\www'
+  ]
+}
+
+Node.js v20.10.0
+
+C:\Users\delic\Desktop\Api AutoresyPost>SET DEBUG=api-autoresypost:* & npm start
+
+> api-autoresypost@0.0.0 start
+> node ./bin/www
+
+node:internal/modules/cjs/loader:1147
+  throw err;
+  ^
+
+Error: Cannot find module '../db'
+Require stack:
+- C:\Users\delic\Desktop\Api AutoresyPost\models\autor.model.js
+- C:\Users\delic\Desktop\Api AutoresyPost\controllers\autor.controller.js
+- C:\Users\delic\Desktop\Api AutoresyPost\routes\index.js
+- C:\Users\delic\Desktop\Api AutoresyPost\app.js
+- C:\Users\delic\Desktop\Api AutoresyPost\bin\www
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (C:\Users\delic\Desktop\Api AutoresyPost\models\autor.model.js:1:12)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\delic\\Desktop\\Api AutoresyPost\\models\\autor.model.js',
+    'C:\\Users\\delic\\Desktop\\Api AutoresyPost\\controllers\\autor.controller.js',
+    'C:\\Users\\delic\\Desktop\\Api AutoresyPost\\routes\\index.js',
+    'C:\\Users\\delic\\Desktop\\Api AutoresyPost\\app.js',
+    'C:\\Users\\delic\\Desktop\\Api AutoresyPost\\bin\\www'
+  ]
+}
+
+Node.js v20.10.0
+
+C:\Users\delic\Desktop\Api AutoresyPost>SET DEBUG=api-autoresypost:* & npm start
+
+> api-autoresypost@0.0.0 start
+> node ./bin/www
+
+node:internal/modules/cjs/loader:1147
+  throw err;
+  ^
+
+Error: Cannot find module '../db'
+Require stack:
+- C:\Users\delic\Desktop\Api AutoresyPost\models\autor.model.js
+- C:\Users\delic\Desktop\Api AutoresyPost\controllers\autor.controller.js
+- C:\Users\delic\Desktop\Api AutoresyPost\routes\index.js
+- C:\Users\delic\Desktop\Api AutoresyPost\app.js
+- C:\Users\delic\Desktop\Api AutoresyPost\bin\www
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (C:\Users\delic\Desktop\Api AutoresyPost\models\autor.model.js:1:12)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\delic\\Desktop\\Api AutoresyPost\\models\\autor.model.js',
+    'C:\\Users\\delic\\Desktop\\Api AutoresyPost\\controllers\\autor.controller.js',
+    'C:\\Users\\delic\\Desktop\\Api AutoresyPost\\routes\\index.js',
+    'C:\\Users\\delic\\Desktop\\Api AutoresyPost\\app.js',
+    'C:\\Users\\delic\\Desktop\\Api AutoresyPost\\bin\\www'
+  ]
+}
+
+Node.js v20.10.0
+
+C:\Users\delic\Desktop\Api AutoresyPost>SET DEBUG=api-autoresypost:* & npm start
+
+> api-autoresypost@0.0.0 start
+> node ./bin/www
+
+node:internal/modules/cjs/loader:1147
+  throw err;
+  ^
+
+Error: Cannot find module './routes/users'
+Require stack:
+- C:\Users\delic\Desktop\Api AutoresyPost\app.js
+- C:\Users\delic\Desktop\Api AutoresyPost\bin\www
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (C:\Users\delic\Desktop\Api AutoresyPost\app.js:8:19)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\delic\\Desktop\\Api AutoresyPost\\app.js',
+    'C:\\Users\\delic\\Desktop\\Api AutoresyPost\\bin\\www'
+  ]
+}
+
+Node.js v20.10.0
+
+C:\Users\delic\Desktop\Api AutoresyPost>SET DEBUG=api-autoresypost:* & npm start
+
+> api-autoresypost@0.0.0 start
+> node ./bin/www
+
+C:\Users\delic\Desktop\Api AutoresyPost\app.js:24
+app.use('/users', usersRouter);
+                  ^
+
+ReferenceError: usersRouter is not defined
+    at Object.<anonymous> (C:\Users\delic\Desktop\Api AutoresyPost\app.js:24:19)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (C:\Users\delic\Desktop\Api AutoresyPost\bin\www:7:11)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+
+Node.js v20.10.0
+
+C:\Users\delic\Desktop\Api AutoresyPost>SET DEBUG=api-autoresypost:* & npm start
+
+> api-autoresypost@0.0.0 start
+> node ./bin/www
+
+  api-autoresypost:server Listening on port 3000 +0ms
+GET /autor/123 500 31.024 ms - 70
+^C^C¿Desea terminar el trabajo por lotes (S/N)? s
+
+C:\Users\delic\Desktop\Api AutoresyPost>SET DEBUG=api-autoresypost:* & npm start
+
+> api-autoresypost@0.0.0 start
+> node ./bin/www
+
+node:internal/modules/cjs/loader:1147
+  throw err;
+  ^
+
+Error: Cannot find module 'dotenv'
+Require stack:
+- C:\Users\delic\Desktop\Api AutoresyPost\app.js
+- C:\Users\delic\Desktop\Api AutoresyPost\bin\www
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (C:\Users\delic\Desktop\Api AutoresyPost\app.js:11:1)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\delic\\Desktop\\Api AutoresyPost\\app.js',
+    'C:\\Users\\delic\\Desktop\\Api AutoresyPost\\bin\\www'
+  ]
+}
+
+Node.js v20.10.0
+
+C:\Users\delic\Desktop\Api AutoresyPost>npm install                             
+
+added 1 package, and audited 144 packages in 2s
+
+14 packages are looking for funding
+  run `npm fund` for details
+
+7 vulnerabilities (2 low, 5 high)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues, run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+C:\Users\delic\Desktop\Api AutoresyPost>SET DEBUG=api-autoresypost:* & npm start
+
+> api-autoresypost@0.0.0 start
+> node ./bin/www
+
+  api-autoresypost:server Listening on port 3000 +0ms
+GET /autor/123 500 32.128 ms - 55
+GET /autor/123 404 3.027 ms - 31
+GET /api/autor/123 404 265.204 ms - 1212
+GET /stylesheets/style.css 200 3.184 ms - 111
+^C^C¿Desea terminar el trabajo por lotes (S/N)? S
+
+C:\Users\delic\Desktop\Api AutoresyPost>SET DEBUG=api-autoresypost:* & npm start
+
+> api-autoresypost@0.0.0 start
+> node ./bin/www
+
+C:\Users\delic\Desktop\Api AutoresyPost\routes\index.js:7
+router.group('/api', () => {
+       ^
+
+TypeError: router.group is not a function
+    at Object.<anonymous> (C:\Users\delic\Desktop\Api AutoresyPost\routes\index.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (C:\Users\delic\Desktop\Api AutoresyPost\app.js:7:19)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+
+Node.js v20.10.0
+
+C:\Users\delic\Desktop\Api AutoresyPost>SET DEBUG=api-autoresypost:* & npm start
+
+> api-autoresypost@0.0.0 start
+> node ./bin/www
+
+  api-autoresypost:server Listening on port 3000 +0ms
+GET /api/autor/123 404 34.437 ms - 31
+POST /api/autor 500 257.263 ms - 1332
+GET /stylesheets/style.css 200 2.392 ms - 111
+POST /api/autor 500 9.317 ms - 1332
+GET /stylesheets/style.css 304 0.767 ms - -
+^C^C¿Desea terminar el trabajo por lotes (S/N)? s
+
+C:\Users\delic\Desktop\Api AutoresyPost>SET DEBUG=api-autoresypost:* & npm start
+
+> api-autoresypost@0.0.0 start
+> node ./bin/www
+
+  api-autoresypost:server Listening on port 3000 +0ms
+POST /api/autor 500 280.139 ms - 1333
+GET /stylesheets/style.css 304 1.405 ms - -
+POST /api/autor 500 12.623 ms - 1333
+GET /stylesheets/style.css 304 0.638 ms - -
+POST /api/autor 201 3.370 ms - 47
+POST /api/1 404 8.178 ms - 992
+GET /stylesheets/style.css 304 0.327 ms - -
+POST /api/autor/1 404 7.005 ms - 992
+GET /stylesheets/style.css 304 0.343 ms - -
+GET /api/autor/1 200 4.742 ms - 85
+GET /api/autor/1 200 1.431 ms - 85
+^C^C¿Desea terminar el trabajo por lotes (S/N)? s
+
+C:\Users\delic\Desktop\Api AutoresyPost>SET DEBUG=api-autoresypost:* & npm start
+
+> api-autoresypost@0.0.0 start
+> node ./bin/www
+
+  api-autoresypost:server Listening on port 3000 +0ms
+GET /api/autor/3 404 40.141 ms - 31
+GET /api/autor/4 404 1.733 ms - 31
